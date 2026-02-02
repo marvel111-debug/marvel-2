@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KulinerKu</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS Agar Gambar Promo Rapi -->
+  <style>
+    .card-img-top {
+      height: 220px;        /* semua gambar sama tinggi */
+      object-fit: cover;    /* gambar otomatis dipotong biar rapi */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">KulinerKu</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Promo</a></li>
+        </ul>
+
+        <div class="input-group w-25">
+          <select class="form-select">
+            <option selected>Pilih menu</option>
+            <option>Nasi Goreng</option>
+            <option>Bakso</option>
+            <option>Rawon</option>
+          </select>
+          <button class="btn btn-warning">Cari</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BANNER / CAROUSEL -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="gambar.jfif" class="d-block w-100" alt="banner">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- SECTION PROMO -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">🔥 Promo Spesial Hari Ini</h2>
+
+    <div class="row g-4">
+
+      <!-- Promo 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="nasi goreng.jfif" class="card-img-top" alt="promo">
+          <div class="card-body">
+            <h5 class="card-title">Nasi Goreng</h5>
+            <p class="card-text">Diskon 20% khusus hari ini.</p>
+            <a href="#" class="btn btn-danger">Pesan Sekarang</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Promo 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="download.jfif" class="card-img-top" alt="promo">
+          <div class="card-body">
+            <h5 class="card-title">Bakso Jumbo</h5>
+            <p class="card-text">Gratis es teh manis.</p>
+            <a href="#" class="btn btn-danger">Pesan Sekarang</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Promo 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="Rawon.jfif" class="card-img-top" alt="promo">
+          <div class="card-body">
+            <h5 class="card-title">Rawon</h5>
+            <p class="card-text">Harga spesial minggu ini.</p>
+            <a href="#" class="btn btn-danger">Pesan Sekarang</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
